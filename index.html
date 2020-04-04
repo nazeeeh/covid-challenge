@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 sensitization</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    
+    
+</head>
+<body>
+    <div id="app">
+
+    
+    <div class="container-fluid io">
+        <div class="background">
+            <div class="row">
+                <div class="col-6 first">
+                    <h3>Covid-19 Advocacy </h3>
+                    <p>This tool will helps you to know what next about the covid-19 virus.</p>
+                    <p>Lets look out for each other by knowing and checking our status, try not to
+                        infect others by staying at home and also reserve care for those in need
+                    </p>
+                    <button id="" class="btn btn-info btn-lg btn-block mt-5">Start screening</button>
+                </div>
+                <div class="col-6">
+                    <img src="images/illustration-your-users.svg" width="70%">
+                </div>
+            </div> 
+        </div>
+    </div>
+    <div class="container-fluid about">
+        <div class="about">
+            <div class="row">
+                <div class="col">
+                    <h5>About covid-19</h5>
+                    <p>An uptodate rundowns of the virus and its symtoms </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="col">
+                    <h5>What you can do</h5>
+                    <p>Informations about social distancing and isolation from others and other 
+                        related preventions
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div class="col">
+                    <h5>covid-19 Live Updates</h5>
+                    <h6>confirmed cases: {{ counter }}</h6>
+                    <button @click="increment" class="btn btn-primary btn-sm move">click</button>
+                    <h6>Recovery cases: {{ counter1 }}</h6>
+                    <button @click="increment1" class="btn btn-primary btn-sm move">click</button>
+                    <h6>Deaths: {{ counter2 }}</h6>
+                    <button @click="increment2" class="btn btn-primary btn-sm move">click</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+
+
+    </div>
+
+</div>
+
+<script src="index.js"></script>
+  
+</body>
+</html>
